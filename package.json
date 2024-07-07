@@ -18,9 +18,6 @@
     "seed:run": "cross-env TZ=UTC DOTENV_CONFIG_PATH=.env.local TS_NODE_SKIP_PROJECT=true node --require dotenv/config --require ts-node/register ./scripts/migrations/seed.ts"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.4",
     "@supabase/auth-helpers-nextjs": "^0.7.4",
     "@supabase/supabase-js": "^2.4.1",
     "@types/lodash": "^4.14.180",
@@ -28,13 +25,16 @@
     "classnames": "^2.3.2",
     "date-fns": "^2.29.3",
     "date-fns-tz": "^2.0.0",
+    "framer-motion": "^11.2.13",
     "kysely": "^0.26.1",
     "lodash": "^4.17.21",
+    "next": "14.2.4",
+    "next-optimized-images": "^2.6.2",
+    "react": "^18",
+    "react-dom": "^18",
     "react-hot-toast": "^2.2.0",
     "swr": "^2.0.0",
-    "zod": "^3.20.2",
-    "framer-motion": "3.10.6",
-    "next-optimized-images": "^2.6.2"
+    "zod": "^3.20.2"
   },
   "devDependencies": {
     "typescript": "^5",

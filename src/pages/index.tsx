@@ -1,9 +1,9 @@
 import React, { Suspense } from 'react';
 import { Card } from '@/components/card';
-import { AnimatePresence, motion } from 'framer-motion';
 import HomeIcon from '@/assets/svgs/home.svg';
 import CircleAdd from '@/assets/svgs/circle-add.svg';
 import { LastContent } from '@/modules/landing/last-content';
+import { AnimatePresence, motion } from 'framer-motion';
 
 const Home = () => {
 
