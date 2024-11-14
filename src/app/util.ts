@@ -127,7 +127,7 @@ export const getNextDayOfWeek = (
   hours: number,
   minutes: number
 ) => {
-  let today = new Date();
+  const today = new Date();
   let daysUntilNextDay = dayOfWeek - today.getDay();
   if (daysUntilNextDay < 0) {
     daysUntilNextDay += 7;
