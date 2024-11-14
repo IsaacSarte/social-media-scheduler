@@ -25,7 +25,7 @@ export default function DeleteScheduleModal({
       delSelectedCell.day_id !== undefined
     ) {
       const initialSchedule = [...yourSchedule];
-      let selectedDay =
+      const selectedDay =
         initialSchedule[delSelectedCell.time_id].schedule[
           delSelectedCell.day_id - 1
         ];
@@ -52,6 +52,7 @@ export default function DeleteScheduleModal({
       });
       if (res.ok) {
         const data = await res.json();
+        console.log(data);
         updateYourSchedule(schedule);
         closeModal();
       }
